@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Link from "next/link";
+
 import styles from "./Navbar.module.css";
 
 const Navbar: NextPage = ({ children }) => {

@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+
 import styles from "../styles/Dad.module.css";
 
 const Dad: NextPage = () => {

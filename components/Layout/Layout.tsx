@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+
 import Navbar from "../Navbar/Navbar";
+
 import styles from "./Layout.module.css";
 
 const Layout: NextPage = ({ children }) => {
