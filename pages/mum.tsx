@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-import SoundBoard from "../components/SoundBoard/SoundBoard";
+import SoundPads from "../components/SoundPads/SoundPads";
 import { MUM_IMAGES } from "../data/images/mum";
 import { MUM_SOUNDS } from "../data/sounds/mum";
 import styles from "../styles/Mum.module.scss";
@@ -9,7 +9,7 @@ const Mum: NextPage = () => {
   return (
     <>
       <h1 className={styles.title}>Mum</h1>
-      <SoundBoard sounds={MUM_SOUNDS} imagePublicIds={MUM_IMAGES} />
+      <SoundPads sounds={MUM_SOUNDS} imagePublicIds={MUM_IMAGES} />
     </>
   );
 };

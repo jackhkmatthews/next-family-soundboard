@@ -1,14 +1,14 @@
 import { ISound } from "../../types/sounds";
 import SoundPad from "../SoundPad/SoundPad";
 
-import styles from "./SoundBoard.module.scss";
+import styles from "./SoundPads.module.scss";
 
-export interface ISoundBoard {
+export interface ISoundPads {
   sounds: ISound[];
   imagePublicIds: string[];
 }
 
-const SoundBoard = ({ sounds, imagePublicIds }: ISoundBoard) => {
+const SoundPads = ({ sounds, imagePublicIds }: ISoundPads) => {
   return (
     <ul className={styles.root}>
       {sounds.map((sound, index) => (
@@ -25,4 +25,4 @@ const SoundBoard = ({ sounds, imagePublicIds }: ISoundBoard) => {
   );
 };
 
-export default SoundBoard;
+export default SoundPads;

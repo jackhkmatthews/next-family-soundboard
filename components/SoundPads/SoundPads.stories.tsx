@@ -4,15 +4,15 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { DAD_IMAGES } from "../../data/images/dad";
 import { DAD_SOUNDS } from "../../data/sounds/dad";
 
-import SoundBoard from "./SoundBoard";
+import SoundPads from "./SoundPads";
 
 export default {
-  title: "Components/SoundBoard",
-  component: SoundBoard,
-} as ComponentMeta<typeof SoundBoard>;
+  title: "Components/SoundPads",
+  component: SoundPads,
+} as ComponentMeta<typeof SoundPads>;
 
-const Template: ComponentStory<typeof SoundBoard> = (args) => (
-  <SoundBoard {...args} />
+const Template: ComponentStory<typeof SoundPads> = (args) => (
+  <SoundPads {...args} />
 );
 
 export const Default = Template.bind({});
