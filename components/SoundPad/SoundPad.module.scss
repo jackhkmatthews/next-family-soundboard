@@ -118,4 +118,8 @@
   top: 25%;
   transform: rotate(-45deg);
   width: 100%;
+
+  .root.isPlaying & {
+    background-color: red;
+  }
 }

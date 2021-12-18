@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { useRef } from "react";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { fill } from "@cloudinary/url-gen/actions/resize";
+
+import { useSound } from "../../hooks/useSound";
 
 import styles from "./SoundPad.module.scss";
 
@@ -28,21 +29,21 @@ const SoundPad = ({
   title,
   className,
 }: ISoundPad) => {
-  const audioPlayer = useRef<HTMLAudioElement>(null);
+  const { audioRef, isPlaying, play } = useSound();
   const sound = cld.video(soundPublicId);
   const image = cld.image(imagePublicId);
   sound.format("mp3");
   image.resize(fill().width(100).height(100));
 
   const rootStyles = [className, styles.root];
+  if (isPlaying) rootStyles.push(styles.isPlaying);
 
-  function handleClick() {
-    audioPlayer.current?.load();
-    audioPlayer.current?.play();
+  function handleMouseDown() {
+    play();
   }
 
   return (
-    <button className={rootStyles.join(" ")} onClick={handleClick}>
+    <button className={rootStyles.join(" ")} onMouseDown={handleMouseDown}>
       <span className={styles.shadow}></span>
       <span className={styles.edge}></span>
       <figure className={styles.front}>
@@ -57,7 +58,7 @@ const SoundPad = ({
           className={styles.audio}
           src={sound.toURL()}
           id={soundPublicId}
-          ref={audioPlayer}
+          ref={audioRef}
           preload="auto"
         >
           Your browser does not support the
