@@ -1,3 +1,9 @@
+@use "styles/mixins";
+
+.root {
+  @include mixins.button-reset;
+}
+
 .figure {
   margin: 0;
   padding: 0;

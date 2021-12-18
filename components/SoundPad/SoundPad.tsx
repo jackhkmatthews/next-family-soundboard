@@ -37,7 +37,6 @@ const SoundPad = ({
   const rootStyles = [className, styles.root];
 
   function handleClick() {
-    console.log("click");
     audioPlayer.current?.play();
   }
 
