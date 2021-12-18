@@ -1,9 +1,8 @@
-import type { NextPage } from "next";
 import Link from "next/link";
 
-import styles from "./Navbar.module.css";
+import styles from "./Navbar.module.scss";
 
-const Navbar: NextPage = ({ children }) => {
+const Navbar = () => {
   return (
     <ul className={styles.root}>
       <li className={styles.item}>
