@@ -32,11 +32,12 @@ const SoundPad = ({
   const sound = cld.video(soundPublicId);
   const image = cld.image(imagePublicId);
   sound.format("mp3");
-  image.resize(fill().width(250).height(250));
+  image.resize(fill().width(100).height(100));
 
   const rootStyles = [className, styles.root];
 
   function handleClick() {
+    audioPlayer.current?.load();
     audioPlayer.current?.play();
   }
 
@@ -47,8 +48,7 @@ const SoundPad = ({
           className={styles.img}
           src={image.toURL()}
           alt={title}
-          height={200}
-          width={200}
+          layout="fill"
         />
         <figcaption className={styles.name}>{title}</figcaption>
         <audio
@@ -56,6 +56,7 @@ const SoundPad = ({
           src={sound.toURL()}
           id={soundPublicId}
           ref={audioPlayer}
+          preload="auto"
         >
           Your browser does not support the
           <code>audio</code> element.

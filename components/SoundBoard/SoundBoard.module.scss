@@ -1,10 +1,18 @@
-.pads {
+.root {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 .padsItem {
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+.pad {
+  width: 100%;
 }

@@ -7,10 +7,10 @@ import styles from "../styles/Mum.module.scss";
 
 const Mum: NextPage = () => {
   return (
-    <div>
+    <>
       <h1 className={styles.title}>Mum</h1>
       <SoundBoard sounds={MUM_SOUNDS} imagePublicIds={MUM_IMAGES} />
-    </div>
+    </>
   );
 };
 

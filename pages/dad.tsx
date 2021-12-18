@@ -7,10 +7,10 @@ import styles from "../styles/Dad.module.scss";
 
 const Dad: NextPage = () => {
   return (
-    <div>
+    <>
       <h1 className={styles.title}>Dad</h1>
       <SoundBoard sounds={DAD_SOUNDS} imagePublicIds={DAD_IMAGES} />
-    </div>
+    </>
   );
 };
 

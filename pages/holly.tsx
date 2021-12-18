@@ -7,10 +7,10 @@ import styles from "../styles/Holly.module.scss";
 
 const Holly: NextPage = () => {
   return (
-    <div>
+    <>
       <h1 className={styles.title}>Holly</h1>
       <SoundBoard sounds={HOLLY_SOUNDS} imagePublicIds={HOLLY_IMAGES} />
-    </div>
+    </>
   );
 };
 

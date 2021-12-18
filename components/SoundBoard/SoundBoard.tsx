@@ -10,20 +10,18 @@ export interface ISoundBoard {
 
 const SoundBoard = ({ sounds, imagePublicIds }: ISoundBoard) => {
   return (
-    <div className={styles.board}>
-      <ul className={styles.pads}>
-        {sounds.map((sound, index) => (
-          <li key={index} className={styles.padsItem}>
-            <SoundPad
-              className={styles.pad}
-              soundPublicId={sound.cloudinaryPublicId}
-              title={sound.title}
-              imagePublicId={imagePublicIds[index % imagePublicIds.length]}
-            />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className={styles.root}>
+      {sounds.map((sound, index) => (
+        <li key={index} className={styles.padsItem}>
+          <SoundPad
+            className={styles.pad}
+            soundPublicId={sound.cloudinaryPublicId}
+            title={sound.title}
+            imagePublicId={imagePublicIds[index % imagePublicIds.length]}
+          />
+        </li>
+      ))}
+    </ul>
   );
 };
 
