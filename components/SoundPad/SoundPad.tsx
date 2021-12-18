@@ -43,7 +43,9 @@ const SoundPad = ({
 
   return (
     <button className={rootStyles.join(" ")} onClick={handleClick}>
-      <figure className={styles.figure}>
+      <span className={styles.shadow}></span>
+      <span className={styles.edge}></span>
+      <figure className={styles.front}>
         <Image
           className={styles.img}
           src={image.toURL()}

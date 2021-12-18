@@ -1,12 +1,12 @@
 .root {
   display: flex;
+  gap: 20px;
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
-  gap: 20px;
 }
 
 .item {
-  padding: 20px;
   margin: 0;
+  padding: 20px;
 }

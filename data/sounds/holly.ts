@@ -103,7 +103,7 @@ export const HOLLY_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/holly/grona-lund_svattr",
-    title: "",
+    title: "Grona lund",
   },
   {
     cloudinaryPublicId:
