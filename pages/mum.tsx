@@ -1,27 +1,17 @@
-import type { GetStaticProps, NextPage } from "next";
+import type { NextPage } from "next";
 
 import SoundBoard from "../components/SoundBoard/SoundBoard";
+import { MUM_IMAGES } from "../data/images/mum";
 import { MUM_SOUNDS } from "../data/sounds/mum";
-import styles from "../styles/Dad.module.scss";
-import getImages, { MEMBER } from "../utils/cloudinary";
+import styles from "../styles/Mum.module.scss";
 
-const Mum: NextPage<{ images: string[] }> = ({ images }) => {
+const Mum: NextPage = () => {
   return (
     <div>
       <h1 className={styles.title}>Mum</h1>
-      <SoundBoard sounds={MUM_SOUNDS} imagePublicIds={images} />
+      <SoundBoard sounds={MUM_SOUNDS} imagePublicIds={MUM_IMAGES} />
     </div>
   );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-  const images = await getImages(MEMBER.mum);
-
-  return {
-    props: {
-      images: images.map(({ public_id }) => public_id),
-    },
-  };
 };
 
 export default Mum;
