@@ -1,12 +1,56 @@
 .root {
   display: flex;
   gap: 20px;
+  justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .item {
+  display: inline-block;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  position: relative;
+
+  &.dad {
+    --hover: var(--pink-01);
+    --active: var(--pink-03);
+  }
+
+  &.mama {
+    --hover: var(--yellow-01);
+    --active: var(--yellow-02);
+  }
+
+  &.holly {
+    --hover: var(--teal-01);
+    --active: var(--teal-02);
+  }
+
+  &::after {
+    bottom: 0;
+    display: inline-block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  &:hover::after {
+    background-color: var(--hover);
+    content: "";
+  }
+
+  &.isActive::after {
+    background-color: var(--active);
+    content: "";
+  }
+}
+
+.link {
+  color: var(--grey-01);
+  display: inline-block;
+  padding: 10px 20px;
 }
