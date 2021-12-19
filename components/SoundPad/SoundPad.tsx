@@ -31,7 +31,7 @@ const SoundPad = ({
   className,
   colorScheme = COLOR_SCHEME.teal,
 }: ISoundPad) => {
-  const { audioRef, isPlaying, play } = useSound();
+  const { audioRef, isPlaying, play, pauseAll } = useSound();
   const { elementRef } = useDynamicDurationProperty(
     "--pulse-duration",
     isPlaying
@@ -44,10 +44,15 @@ const SoundPad = ({
   if (isPlaying) rootStyles.push(styles.isPlaying);
   if (!soundPublicId) rootStyles.push(styles.isEmpty);
 
+  function handleClick() {
+    pauseAll();
+    if (!isPlaying) play();
+  }
+
   return (
     <button
       className={rootStyles.join(" ")}
-      onClick={play}
+      onClick={handleClick}
       ref={elementRef as RefObject<HTMLButtonElement>}
       disabled={!soundPublicId}
     >
