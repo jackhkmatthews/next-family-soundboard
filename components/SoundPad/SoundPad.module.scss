@@ -1,105 +1,133 @@
 @use "styles/mixins";
 
+@keyframes in {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-25%, 0, 0);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translate3d(-25%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    color: var(--grey-02);
+  }
+
+  100% {
+    color: white;
+  }
+}
+
 .root {
+  --pulse-duration: 0.5s;
+
   @include mixins.button-reset;
 
-  background: transparent;
-  border: none;
+  &.pink {
+    --color-light: var(--pink-01);
+    --color-dark: var(--pink-03);
+  }
+
+  &.yellow {
+    --color-light: var(--yellow-01);
+    --color-dark: var(--yellow-02);
+  }
+
+  &.teal {
+    --color-light: var(--teal-01);
+    --color-dark: var(--teal-02);
+  }
+
+  align-items: flex-end;
+  aspect-ratio: 1/1;
+  border: 2px solid var(--color-dark);
+  border-radius: 15px;
+  color: var(--grey-03);
   cursor: pointer;
-  outline-offset: 4px;
-  padding: 0;
+  display: flex;
+  hyphens: auto;
+  overflow: hidden;
+  padding: 0 5px 5px;
   position: relative;
-  transition: filter 250ms;
+  text-align: left;
   user-select: none;
   vertical-align: middle;
-  width: 100px;
+  white-space: initial;
+  width: 100%;
 
   &:hover {
-    filter: brightness(110%);
+    border-color: var(--color-light);
+    color: var(--grey-02);
   }
 
-  &:focus:not(:focus-visible) {
-    outline: none;
-  }
-}
-
-.shadow {
-  background: hsl(0deg 0% 0% / 25%);
-  border-radius: 12px;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform: translateY(2px);
-  transition:
-    transform
-    600ms
-    cubic-bezier(0.3, 0.7, 0.4, 1);
-  width: 100%;
-  will-change: transform;
-
-  .root:hover & {
-    transform: translateY(4px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  &.isPlaying {
+    animation: pulse var(--pulse-duration) ease alternate infinite;
+    border-color: var(--color-light);
   }
 
-  .root:active & {
-    transform: translateY(1px);
-    transition: transform 34ms;
+  &.isEmpty {
+    border-color: var(--grey-04);
+    cursor: initial;
   }
 }
 
-.edge {
-  background:
-    linear-gradient(
-      to left,
-      hsl(340deg 100% 16%) 0%,
-      hsl(340deg 100% 32%) 8%,
-      hsl(340deg 100% 32%) 92%,
-      hsl(340deg 100% 16%) 100%
-    );
-  border-radius: 12px;
-  height: 100%;
+.waves {
   left: 0;
   position: absolute;
-  top: 0;
+  top: 10px;
   width: 100%;
 }
 
-.front {
-  aspect-ratio: 1/1;
-  background: hsl(345deg 100% 47%);
-  border-radius: 12px;
-  display: block;
-  font-size: 1.25rem;
+.flatWave {
+  background-color: var(--color-dark);
+  border: unset;
+  height: 1px;
+  left: 0;
   margin: 0;
-  overflow: hidden;
-  padding: 12px 42px;
-  padding: 0;
-  position: relative;
-  transform: translateY(-4px);
-  transition:
-    transform
-    600ms
-    cubic-bezier(0.3, 0.7, 0.4, 1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-2px);
   width: 100%;
-  will-change: transform;
 
+  .root.isPlaying &,
   .root:hover & {
-    transform: translateY(-6px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(0.3, 0.7, 0.4, 1.5);
+    background-color: var(--color-light);
   }
+}
 
-  .root:active & {
-    transform: translateY(-2px);
-    transition: transform 34ms;
+.soundWave {
+  background-color: var(--grey-06);
+  color: var(--color-dark);
+  transform: translate3d(100%, 0, 0);
+  width: 200%;
+
+  .root.isPlaying & {
+    animation: in 0.75s linear forwards, wave 0.25s linear 0.75s infinite forwards;
+    color: var(--color-light);
   }
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+}
+
+.figure {
+  aspect-ratio: 1/1;
+  display: none;
+  width: 100%;
 }
 
 .img {
@@ -111,15 +139,5 @@
 }
 
 .name {
-  background: white;
-  font-size: 12px;
-  left: -18%;
-  position: absolute;
-  top: 25%;
-  transform: rotate(-45deg);
-  width: 100%;
-
-  .root.isPlaying & {
-    background-color: red;
-  }
+  display: none;
 }

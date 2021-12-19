@@ -14,7 +14,6 @@ const Template: ComponentStory<typeof SoundPad> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  imagePublicId: "family-soundboard/holly/holly-school-smile_mowm1j",
   soundPublicId: "family-soundboard/holly/brother-john_chxydf.m4a",
   title: "Brother John",
 };
