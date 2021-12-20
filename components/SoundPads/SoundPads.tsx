@@ -1,7 +1,7 @@
 import { useContext } from "react";
 
 import { ColorSchemeContext } from "../../contexts/colorScheme";
-import { ISound } from "../../types/sounds";
+import { ISound } from "../../constants/sounds";
 import SoundPad from "../SoundPad/SoundPad";
 
 import styles from "./SoundPads.module.scss";

@@ -1,13 +1,13 @@
-import { ISound } from "../../types/sounds";
+import { ISound } from "../../constants/sounds";
 
 export const MUM_SOUNDS: ISound[] = [
   {
     cloudinaryPublicId: "family-soundboard/mum/woops-3_url85o",
-    title: "Woops",
+    title: "Woops!",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/woops-2_kmgvhd",
-    title: "Woops",
+    title: "Woops!!",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/wooo_uxlp0b",
@@ -15,15 +15,15 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/wooo-3_rvfv8d",
-    title: "Woo",
+    title: "Woo woo",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/wooo-2_l9znx7",
-    title: "Woo",
+    title: "Woo wup!",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/what-is-like_growkr",
-    title: "What is like",
+    title: "Philip! What is like?",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/wee_yoxbsr",
@@ -31,7 +31,7 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/weather_oxs8rb",
-    title: "Weather",
+    title: "Fint väder idag",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/very-very-fast_padjbe",
@@ -39,11 +39,11 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/var-gor-jag_khvb6x",
-    title: "Var gor jag",
+    title: "Vad gör jag?",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/var-ar-footen_eaidi9",
-    title: "Var ar footen",
+    title: "Var är foten?",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/uppsala_rqdo2b",
@@ -51,11 +51,11 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/tv_xzmxsf",
-    title: "Tv",
+    title: "They say they're guiding 'chorists'",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/toeloop_zh9mul",
-    title: "Toeloop",
+    title: "Double Toeloop",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/sunbadding_dj5w23",
@@ -63,7 +63,7 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/sun-up_jmqqyt",
-    title: "Sun up",
+    title: "Most beautiful sun up",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/so-forth-and-so-on_keu8bg",
@@ -71,7 +71,7 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/say-hello-to-the-kids_jszrxy",
-    title: "Say hello to the kids",
+    title: "Say hello to the children",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/pick-da-pockets_ajodij",
@@ -79,15 +79,15 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/larga-mat_nnztvo",
-    title: "Larga mat",
+    title: "Laga mat",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/kommer_xjps3z",
-    title: "Kommer",
+    title: "Kommer!",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/klockan-ar_kffzly",
-    title: "Klockan ar",
+    title: "Klockan är",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/jack_ly8yjg",
@@ -95,7 +95,7 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/incy-wincy-spider_ao7mr6",
-    title: "Incy wincy spider",
+    title: "Imse vimse spindel",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/i-told-you-not-to_ozh1wm",
@@ -103,7 +103,7 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/husss_saplco",
-    title: "Husss",
+    title: "Huuus",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/hundreds-and-hundreds_fxfyuw",
@@ -123,7 +123,7 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/hey2_h7dx04",
-    title: "Hey",
+    title: "Hey!",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/hejsan_jwz5nq",
@@ -131,7 +131,7 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/hejda_o4gle3",
-    title: "Hejda",
+    title: "Hejdå",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/gimme-five_fim1lv",
@@ -139,15 +139,15 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/food-nazi_ygy1ax",
-    title: "Food nazi",
+    title: "Have another sausage",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/food-nazi-2_szol7j",
-    title: "Food nazi",
+    title: "Do you want to see poo bear?",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/feeling_s4am2c",
-    title: "Feeling",
+    title: "How are you feeling?",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/fatty_fjk9dz",
@@ -159,7 +159,7 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/diskar_spexbd",
-    title: "Diskar",
+    title: "Diska!",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/convent-garden_hadcfs",
@@ -179,7 +179,7 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/can-i-ask-a-question_tff4vy",
-    title: "Can I ask a question",
+    title: "Can I ask a question?",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/badding_jxpmjy",

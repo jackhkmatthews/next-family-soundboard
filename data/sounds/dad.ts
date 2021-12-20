@@ -1,17 +1,17 @@
-import { ISound } from "../../types/sounds";
+import { ISound } from "../../constants/sounds";
 
 export const DAD_SOUNDS: ISound[] = [
   {
     cloudinaryPublicId: "family-soundboard/dad/wow_khvyah",
-    title: "Wow",
+    title: "Wow!",
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/what-have-you-got_a5entq",
-    title: "What have you go",
+    title: "What have you got?",
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/tucker-du-om-dansa_vt8w0n",
-    title: "Tucker du om dansa",
+    title: "Tycker du om dansa?",
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/smarmy-boys_swzjjq",
@@ -20,11 +20,11 @@ export const DAD_SOUNDS: ISound[] = [
   {
     cloudinaryPublicId:
       "family-soundboard/dad/she-didnt-like-the-last-one_tjlrvz",
-    title: "She didn't like the last one",
+    title: "She didn't like that last one",
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/say-hej-holly_mlu5rc",
-    title: "Say hey holly",
+    title: "Say hey Holly",
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/say-goodnight_alhhin",
@@ -32,15 +32,15 @@ export const DAD_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/pista-resistance_klwv5l",
-    title: "Pisa resistance",
+    title: "Pista Resistance",
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/phone_v5ukai",
-    title: "Phone",
+    title: "Hi Philip Matthews",
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/phone-2_bx3iid",
-    title: "Phone 2",
+    title: "As to whether",
   },
   {
     cloudinaryPublicId:
@@ -53,7 +53,7 @@ export const DAD_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/mor-du-bra_rjxdca",
-    title: "Mor du bra",
+    title: "Mor du bra?",
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/medicines_clelif",
@@ -61,7 +61,7 @@ export const DAD_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/let-me-see-your-tonsils_bcuvcz",
-    title: "Let me see your tonsils",
+    title: "Can we see your tonsils?",
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/king-of-beers_tcokfe",
@@ -96,12 +96,8 @@ export const DAD_SOUNDS: ISound[] = [
     title: "Good lad",
   },
   {
-    cloudinaryPublicId: "family-soundboard/dad/go-away-jack_w6do9t",
-    title: "Go away Jack",
-  },
-  {
     cloudinaryPublicId: "family-soundboard/dad/go-away-jack-2_tfniar",
-    title: "Go away Jack 2",
+    title: "Jack, go away!",
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/dance-with-holly_dya97a",
@@ -109,6 +105,6 @@ export const DAD_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/dad/being-cute-to-holly_ssirk1",
-    title: "Being cut to Holly",
+    title: "Speak for the camera now",
   },
 ];
