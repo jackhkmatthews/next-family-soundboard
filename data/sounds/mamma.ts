@@ -151,7 +151,7 @@ export const MUM_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/fatty_fjk9dz",
-    title: "Fatty",
+    title: "Tjockis",
   },
   {
     cloudinaryPublicId: "family-soundboard/mum/duktig-flicka_wddhcn",
