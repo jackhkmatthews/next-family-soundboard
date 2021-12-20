@@ -1,6 +1,7 @@
 import { useContext } from "react";
 
 import { ColorSchemeContext } from "../../contexts/colorScheme";
+import { useMediaUp } from "../../hooks/useMediaUp";
 import { ISound } from "../../constants/sounds";
 import SoundPad from "../SoundPad/SoundPad";
 
@@ -8,15 +9,27 @@ import styles from "./SoundPads.module.scss";
 
 export interface ISoundPads {
   sounds: ISound[];
-  columns?: number;
 }
 
-const SoundPads = ({ sounds, columns = 4 }: ISoundPads) => {
+const SoundPads = ({ sounds }: ISoundPads) => {
   const padColorScheme = useContext(ColorSchemeContext);
+  const columns = useMediaUp(
+    [
+      "(min-width: 400px)",
+      "(min-width: 600px)",
+      "(min-width: 1000px)",
+      "(min-width: 1200px)",
+    ],
+    [4, 5, 6, 7],
+    4
+  );
   const columnsInLastRow = sounds.length % columns;
+  const empties = !!columnsInLastRow
+    ? new Array(columns - columnsInLastRow).fill("")
+    : [];
   return (
     <ul className={styles.root}>
-      {sounds.map((sound, index) => (
+      {sounds.concat(empties).map((sound, index) => (
         <li key={index} className={styles.padsItem}>
           <SoundPad
             colorScheme={padColorScheme}
@@ -26,13 +39,6 @@ const SoundPads = ({ sounds, columns = 4 }: ISoundPads) => {
           />
         </li>
       ))}
-      {/* Empty sound pad to aesthetically fill in grid */}
-      {!!columnsInLastRow &&
-        new Array(columns - columnsInLastRow).fill("").map((_, index) => (
-          <li key={index} className={styles.padsItem}>
-            <SoundPad className={styles.pad} />
-          </li>
-        ))}
     </ul>
   );
 };

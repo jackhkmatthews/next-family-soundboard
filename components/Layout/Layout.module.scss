@@ -20,5 +20,7 @@
 }
 
 .footer {
+  align-items: flex-end;
+  display: flex;
   grid-area: footer;
 }

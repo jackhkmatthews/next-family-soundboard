@@ -57,6 +57,7 @@
   color: var(--grey-03);
   cursor: pointer;
   display: flex;
+  font-size: 12px;
   hyphens: auto;
   overflow: hidden;
   padding: 0 5px 5px;
@@ -66,6 +67,10 @@
   vertical-align: middle;
   white-space: initial;
   width: 100%;
+
+  @include mixins.sm-up {
+    font-size: 16px;
+  }
 
   &:hover {
     border-color: var(--color-light);

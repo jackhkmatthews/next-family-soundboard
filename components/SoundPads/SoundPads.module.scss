@@ -1,3 +1,5 @@
+@use "styles/mixins";
+
 .root {
   --gap: 10px;
 
@@ -7,6 +9,22 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @include mixins.sm-up {
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+    max-width: 550px;
+  }
+
+  @include mixins.md-up {
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 650px;
+  }
+
+  @include mixins.lg-up {
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 800px;
+  }
 }
 
 .padsItem {
