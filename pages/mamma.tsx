@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 
 import SoundPads from "../components/SoundPads/SoundPads";
 import { ColorSchemeContext, COLOR_SCHEME } from "../contexts/colorScheme";
-import { MUM_SOUNDS } from "../data/sounds/mama";
+import { MUM_SOUNDS } from "../data/sounds/mamma";
 
 const Mum: NextPage = () => {
   return (

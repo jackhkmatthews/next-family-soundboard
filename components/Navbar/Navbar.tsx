@@ -22,12 +22,12 @@ const Navbar = () => {
       <li
         className={[
           styles.item,
-          styles.mama,
-          router.pathname === "/mama" ? styles.isActive : "",
+          styles.mamma,
+          router.pathname === "/mamma" ? styles.isActive : "",
         ].join(" ")}
       >
-        <Link href="/mama">
-          <a className={styles.link}>Mama</a>
+        <Link href="/mamma">
+          <a className={styles.link}>Mamma</a>
         </Link>
       </li>
       <li

@@ -63,7 +63,7 @@ export const HOLLY_SOUNDS: ISound[] = [
   },
   {
     cloudinaryPublicId: "family-soundboard/holly/meow_oviwxo",
-    title: "Meow",
+    title: "Meooow",
   },
   {
     cloudinaryPublicId: "family-soundboard/holly/medicines_yajoqk",
