@@ -11,7 +11,6 @@ export function useMediaUp<T>(queries: string[], values: T[], defaultValue: T) {
   }, [values, defaultValue]);
 
   useEffect(() => {
-    console.log("effect");
     mediaQueryLists.current = queries.map((q) => window.matchMedia(q));
     updateValue();
     mediaQueryLists.current.forEach((query) =>
