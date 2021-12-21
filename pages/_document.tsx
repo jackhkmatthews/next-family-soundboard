@@ -21,7 +21,7 @@ class MyDocument extends Document {
             crossOrigin=""
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=optional"
             rel="stylesheet"
           />
           <link rel="icon" href="/favicon.ico" />
