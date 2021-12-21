@@ -63,6 +63,7 @@
   padding: 0 5px 5px;
   position: relative;
   text-align: left;
+  transition: border-color 0.5s linear 0s, color 0.5s linear 0s;
   user-select: none;
   vertical-align: middle;
   white-space: initial;
@@ -75,6 +76,7 @@
   &:hover {
     border-color: var(--color-light);
     color: var(--grey-02);
+    transition: initial;
   }
 
   &.isPlaying {
