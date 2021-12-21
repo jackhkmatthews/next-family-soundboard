@@ -14,23 +14,16 @@
   @include mixins.sm-up {
     --columns: 5;
     --width: 20%;
-
-    margin: 0 auto;
-    max-width: 550px;
   }
 
   @include mixins.md-up {
     --columns: 6;
     --width: 16.6667%;
-
-    max-width: 650px;
   }
 
   @include mixins.lg-up {
     --columns: 7;
     --width: 14.2857%;
-
-    max-width: 800px;
   }
 }
 

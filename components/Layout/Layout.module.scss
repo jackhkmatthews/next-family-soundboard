@@ -1,3 +1,5 @@
+@use "styles/mixins";
+
 .container {
   --gap: 20px;
 
@@ -9,6 +11,19 @@
     "footer";
   min-height: 100vh;
   padding: var(--gap);
+
+  @include mixins.sm-up {
+    margin: 0 auto;
+    max-width: 550px;
+  }
+
+  @include mixins.md-up {
+    max-width: 650px;
+  }
+
+  @include mixins.lg-up {
+    max-width: 800px;
+  }
 }
 
 .header {
